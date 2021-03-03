@@ -63,3 +63,26 @@ print("Thanks for playing")
 #         sys.exit()
 
 # print(compare(user1_answer, user2_answer))
+
+
+#simple solution with two players 
+player1 = 'paper'
+player2 = 'rock' 
+
+if (player1 == 'paper' and player2 == 'paper') or (player1 == 'rock' and player2 == 'rock') or (player1 == 'scissors' and player2 == 'scissors'):
+    print('It\'s a tie!')
+elif player2 == 'rock':
+    if player1 == 'scissors':
+        print('Player 2 won!')
+    else:
+        print('Player 1 won!')
+elif player2 == "paper":
+    if player1 == 'rock':
+        print("Player 2 won!")
+    else:
+        print("player 1 won!")
+elif player2 == 'scissors':
+    if player1 == 'rock':
+        print('Player 2 won!')
+    else:
+        print('Player 1 won!')
